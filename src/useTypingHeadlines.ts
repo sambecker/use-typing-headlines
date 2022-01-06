@@ -2,6 +2,9 @@ import { useEffect, useMemo, useState } from 'react';
 
 const STRING_DELIMITER = '\0';
 
+const DEFAULT_HEADLINE_INTERVAL = 4000;
+const DEFAULT_LETTER_INTERVAL = 50;
+
 export interface TypingHeadlinesOptions {
   // Only display the initial headline, unanimated
   isStatic: boolean,
@@ -13,15 +16,21 @@ export interface TypingHeadlinesOptions {
   letterInterval: number
 }
 
+export type TypingHeadlinesReturnType = [
+  headlineLive: string,
+  headlineStatic: string,
+  headlineInitial: string,
+];
+
 const useTypingHeadlines = (
   headlines: string[],
   options: Partial<TypingHeadlinesOptions> = {},
-) => {
+): TypingHeadlinesReturnType => {
   const {
     isStatic = false,
     showHeadlineInitially = true,
-    headlineInterval = 4000,
-    letterInterval = 50,
+    headlineInterval = DEFAULT_HEADLINE_INTERVAL,
+    letterInterval = DEFAULT_LETTER_INTERVAL,
   } = options;
 
   // Make headline argument stable
