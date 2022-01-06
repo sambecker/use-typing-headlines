@@ -63,7 +63,7 @@ const Component = () => {
 
   return <>
     <h1 role="img" aria-describedby="ariaId">
-      {headline}
+      {headlineLive}
     </h1>
     <div id="ariaId" aria-live="polite" style={{ visible: 'hidden' }}>
       {headlineStatic}
