@@ -1,0 +1,57 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-console": [
+      "warn", {
+        "allow": ["error"]
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "warn", {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/no-unused-expressions": ["warn"],
+    "comma-dangle": [
+      "warn",
+      "always-multiline"
+    ],
+    "indent": [
+        "warn",
+        2
+    ],
+    "linebreak-style": [
+        "warn",
+        "unix"
+    ],
+    "quotes": [
+        "warn",
+        "single"
+    ],
+    "semi": [
+        "warn",
+        "always"
+    ]
+  }
+}

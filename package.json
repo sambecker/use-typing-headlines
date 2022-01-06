@@ -1,0 +1,33 @@
+{
+  "name": "use-typing-headlines",
+  "version": "0.9.0",
+  "description": "React hook designed to display animated headlines",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [
+    "react-hook",
+    "react"
+  ],
+  "author": "Sam Becker (sam@sambecker.com)",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "dependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.7",
+    "@types/react": "^17.0.38",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "eslint": "^8.6.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  }
+}
