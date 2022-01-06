@@ -29,6 +29,17 @@ const useTypingHeadlines = (
   const headlinesMemo = useMemo(() =>
     headlinesAsString.split(STRING_DELIMITER)
   , [headlinesAsString]);
+
+  // Keep track of longest headline
+  // to prevent premature headline changes
+  const longestHeadlineLength = useMemo(() =>
+    headlinesMemo.reduce((longest, headline) =>
+      headline.length > longest ? headline.length : longest, 0)
+  , [headlinesMemo]);
+  const headlineIntervalMinimum = Math.max(
+    headlineInterval,
+    longestHeadlineLength * letterInterval + 2 * letterInterval,
+  );
   
   // Default headline when 'isStatic' set to 'true'
   // or user prefers reduced motion
@@ -50,9 +61,9 @@ const useTypingHeadlines = (
   // to keep in sync with other instances of `useTypingHeadlines`
   useEffect(() => {
     const interval = setInterval(() =>
-      setAnimationTarget(undefined), headlineInterval);
+      setAnimationTarget(undefined), headlineIntervalMinimum);
     return () => clearInterval(interval);
-  }, [headlineInterval]);
+  }, [headlineIntervalMinimum]);
 
   // Update animation target and static headline
   // every time index changes
