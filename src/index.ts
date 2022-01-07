@@ -1,5 +1,5 @@
-import  useTypingHeadlines, { TypingHeadlinesOptions } from './useTypingHeadlines';
-
-export default useTypingHeadlines;
-
-export { TypingHeadlinesOptions };
+export {
+  useTypingHeadlines,
+  TypingHeadlinesOptions,
+  TypingHeadlinesReturnType,
+} from './useTypingHeadlines';

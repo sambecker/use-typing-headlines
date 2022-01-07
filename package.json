@@ -12,7 +12,9 @@
   },
   "keywords": [
     "react-hook",
-    "react"
+    "react",
+    "text",
+    "animation"
   ],
   "author": "Sam Becker (sam@sambecker.com)",
   "license": "MIT",

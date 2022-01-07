@@ -2,10 +2,10 @@
 
 React hook designed to display animated headlines
 
-## Installation (coming soon!)
+## Installation
 
 ```
-npm i use-typing-headlines
+npm install use-typing-headlines
 ```
 
 ## Usage
@@ -13,6 +13,8 @@ npm i use-typing-headlines
 ### One headline
 
 ```tsx
+import { useTypingHeadlines } from 'use-typing-headlines';
+
 const Component = () => {
   const [headline] = useTypingHeadlines([
     'First you see this',
@@ -49,15 +51,12 @@ const Component = () => {
 }
 ```
 
-### Accessibility (work in progress!)
+### Accessibility (BETA)
 
 ```tsx
 const Component = () => {
-  const [
-    headlineLive,
-    headlineStatic,
-  ] = useTypingHeadlines([
-    'This text will be tranlated to screen readers',
+  const [headlineLive, headlineStatic] = useTypingHeadlines([
+    'This text will be tranlated for screen readers',
     'Updating one full word at a time ...',
   ]);
 

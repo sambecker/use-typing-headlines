@@ -22,7 +22,7 @@ export type TypingHeadlinesReturnType = [
   headlineInitial: string,
 ];
 
-const useTypingHeadlines = (
+export const useTypingHeadlines = (
   headlines: string[],
   options: Partial<TypingHeadlinesOptions> = {},
 ): TypingHeadlinesReturnType => {
@@ -123,5 +123,3 @@ const useTypingHeadlines = (
     headlineInitial,
   ];
 };
-
-export default useTypingHeadlines;
