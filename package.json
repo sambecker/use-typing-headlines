@@ -1,6 +1,6 @@
 {
   "name": "use-typing-headlines",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "React hook designed to display animated headlines",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,6 +18,11 @@
   ],
   "author": "Sam Becker (sam@sambecker.com)",
   "license": "MIT",
+  "homepage": "https://github.com/sambecker/use-typing-headlines#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sambecker/use-typing-headlines.git"
+},
   "peerDependencies": {
     "react": ">=16.8.0"
   },
