@@ -15,7 +15,7 @@ npm install use-typing-headlines
 <img
   src="images/one-headline-preview.gif"
   alt="One headline preview"
-  height="80"
+  height="60"
 />
 
 ```tsx
@@ -37,7 +37,7 @@ const Component = () => {
 <img
   src="images/two-headlines-preview.gif"
   alt="Two headlines preview"
-  height="160"
+  height="120"
 />
 
 ```tsx
