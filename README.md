@@ -12,6 +12,8 @@ npm install use-typing-headlines
 
 ### One headline
 
+![One headline preview](images/one-headline-preview.gif)
+
 ```tsx
 import { useTypingHeadlines } from 'use-typing-headlines';
 
