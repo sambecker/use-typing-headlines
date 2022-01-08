@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/use-typing-headlines.svg)](https://badge.fury.io/js/use-typing-headlines)
+
 # 💻 useTypingHeadlines
 
 React hook designed to display animated headlines
